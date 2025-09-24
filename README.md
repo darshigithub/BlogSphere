@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+📖 BlogSphere
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+BlogSphere is a full-stack blogging platform built with ReactJS (frontend) and Spring Boot + MySQL (backend). It allows users to signup, login, create blogs, view blogs, and delete blogs, with a modern Bootstrap-styled UI.
 
-## Available Scripts
+🚀 Features
 
-In the project directory, you can run:
+🔑 User Authentication (Signup/Login)
 
-### `npm start`
+✍️ Create and Manage Blogs
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📜 View All Blogs or Individual Blog Details
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🗑️ Delete Blog (only by the creator)
 
-### `npm test`
+🎨 Styled UI with Bootstrap
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🛠️ Tech Stack
 
-### `npm run build`
+Frontend: ReactJS, Axios, Bootstrap Backend: Spring Boot, REST API, JPA, MySQL Database: MySQL Deployment Ready: AWS EC2 / S3
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+⚡ Getting Started Backend (Spring Boot)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Navigate to backend project
+cd blog-backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Build & run
+mvn spring-boot:run
 
-### `npm run eject`
+Runs on: http://localhost:8080
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Frontend (ReactJS)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Navigate to frontend
+cd blog-frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install dependencies
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start React app
+npm start
 
-## Learn More
+Runs on: http://localhost:3000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📂 API Endpoints
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+POST /api/auth/signup → Register user
 
-### Code Splitting
+POST /api/auth/login → User login
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+POST /api/blogs → Create blog
 
-### Analyzing the Bundle Size
+GET /api/blogs → Get all blogs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+GET /api/blogs/{id} → Get blog by ID
 
-### Making a Progressive Web App
+DELETE /api/blogs/{id} → Delete blog
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🌐 Deployment
 
-### Advanced Configuration
+Frontend → Host on AWS S3 / Vercel / Netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Backend → Deploy on AWS EC2 / Elastic Beanstalk
 
-### Deployment
+Database → MySQL on AWS RDS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
